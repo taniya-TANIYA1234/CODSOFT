@@ -1,0 +1,307 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  color: #fff;
+  padding: 80px 20px 100px;
+  text-align: center;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #f9f9f9;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  margin-top: 15px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.05em;
+}
+
+.nav-links a:hover {
+  color: #ffe082;
+}
+
+.intro {
+  margin-top: 50px;
+}
+
+.intro h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+.intro p {
+  font-size: 1.3em;
+  margin-top: 10px;
+  color: #f1f1f1;
+}
+
+/* About */
+#about {
+  padding: 100px 20px 60px;
+  background: #fff;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content img {
+  width: 220px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bio ul {
+  text-align: left;
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Skills */
+#skills {
+  background: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#skills h2 {
+  color: #007bff;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: 500;
+  transition: "background 0.3s ease", "transform 0.2s ease";
+}
+
+.skill:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Projects */
+#projects {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+#projects h2 {
+  text-align: center;
+  color: #007bff;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.project {
+  background: #f4f4f4;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.project p {
+  color: #555;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Resume */
+#resume {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#resume h2 {
+  color: #007bff;
+  font-size: 2em;
+}
+
+#resume p {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+#resume button a{
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#resume button a {
+  color: #fff;
+  font-weight: bold;
+}
+
+#resume button:hover {
+  background: #0056b3;
+}
+
+/* Contact */
+#contact {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #007bff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+
+#contact a {
+  color: #007bff;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content img {
+    margin-bottom: 20px;
+  }
+
+  .intro h1 {
+    font-size: 2.2em;
+  }
+
+  .intro p {
+    font-size: 1.1em;
+  }
+}
